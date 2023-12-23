@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/ravenous/static/css/main.61482305.css",
+    "main.js": "/ravenous/static/js/main.b967caf8.js",
+    "static/js/787.a2761047.chunk.js": "/ravenous/static/js/787.a2761047.chunk.js",
+    "static/media/food.jpg": "/ravenous/static/media/food.a748900efa2fb2d384ab.jpg",
+    "static/media/food-business-image.jpg": "/ravenous/static/media/food-business-image.15acb122e2c35ac310a3.jpg",
+    "index.html": "/ravenous/index.html",
+    "main.61482305.css.map": "/ravenous/static/css/main.61482305.css.map",
+    "main.b967caf8.js.map": "/ravenous/static/js/main.b967caf8.js.map",
+    "787.a2761047.chunk.js.map": "/ravenous/static/js/787.a2761047.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.61482305.css",
+    "static/js/main.b967caf8.js"
+  ]
+}
