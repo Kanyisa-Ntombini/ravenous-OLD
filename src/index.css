@@ -195,7 +195,6 @@ header h1 {
 .inputs {
   width: 35rem;
   margin: 1rem auto;
-  background-color: yellow;
   display: flex;
   justify-content: space-evenly;
 }
@@ -203,13 +202,44 @@ header h1 {
 .inputs input {
   display: block;
   width: 15rem;
-  border: 0.125rem solid black;
+  padding: 0.5rem 1rem;
+  border: 0.125rem solid #7f2117;
+  border-radius: 0.5rem;
 }
 
 .search-bar button {
   display: block;
   width: 15rem;
   margin: 1rem auto;
+  border: 0.1rem solid #7f2117;
+  border-radius: 1rem;
+  padding: 0.35rem 0;
+  color: #7f2117;
+  font-size: 1rem;
+  background-color: #ffe5e2;
+}
+
+.search-bar button:active {
+  width: 16rem;
+  height: 2.5rem;
+}
+
+.filter {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.filter-options:hover {
+  text-decoration: underline;
+  color: #7f2117;
+  cursor: pointer;
+}
+
+.filter-section hr {
+  border: 0.15rem solid #7f2117;
+  width: 50%;
 }
 
 main ul {

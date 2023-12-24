@@ -1,17 +1,7 @@
 import React from 'react';
-import foodBusinessImage from './food-business-image.jpg';
+import { classNamesObject, businessObject } from './utility_objects';
 
-const businessObject = {
-  imageSrc: foodBusinessImage,
-  name: "Kanyi's Corner",
-  address: '122 Sunnyhill Street',
-  city: 'Fairy Town',
-  state: 'Fairytale Land',
-  zipCode: 8888,
-  category: 'lacto-ovo vegetarian',
-  rating: 4.8,
-  reviewCount: 120,
-};
+sessionStorage.clear();
 
 function Business() {
   return (
@@ -22,12 +12,12 @@ function Business() {
 
       <h3>{businessObject.name}</h3>
 
-      <ul>
-        <li>{businessObject.address}</li>
-        <li>{businessObject.city}</li>
-        <li>{businessObject.state}</li>
-        <li>{businessObject.zipCode}</li>
-      </ul>
+      <div className="business-address">
+        <p>{businessObject.address}</p>
+        <p>{businessObject.city}</p>
+        <p>{businessObject.state}</p>
+        <p>{businessObject.zipCode}</p>
+      </div>
 
       <p>{businessObject.category}</p>
       <p>{businessObject.rating}</p>
@@ -37,35 +27,93 @@ function Business() {
 }
 
 function BusinessList() {
-  const business = [];
+  const something = [];
   for (let i = 0; i < 9; i++) {
-    business.push(<Business />);
+    something.push(<Business />);
   }
 
+  const business = something.map((business, index) => (
+    <li key={index}>
+      <Business />
+    </li>
+  ));
+
   return (
-    <section>
+    <section className="business-list">
       <ul>{business}</ul>
     </section>
   );
 }
 
+function SearchInputs() {
+  return (
+    <div className="inputs">
+      <input id="searchBusinessTerm" placeholder="Search Businesses" />
+      <input id="searchBusinessArea" placeholder="Where?" />
+    </div>
+  );
+}
+
+function SearchButton() {
+  function searchInfo() {
+    const searchBusinessTerm = document.getElementById('searchBusinessTerm');
+    const searchBusinessArea = document.getElementById('searchBusinessArea');
+
+    const term = searchBusinessTerm.value;
+    const location = searchBusinessArea.value;
+    const radius = 1000;
+    const sortBy = sessionStorage.getItem('filterChoice');
+
+    console.log(`location = ${location}`);
+    console.log(`term = ${term}`);
+    console.log(`radius = ${radius}`);
+    console.log(`sortBy = ${sortBy}`);
+  }
+
+  return <button onClick={searchInfo}>Let's Go</button>;
+}
+
 function SearchBar() {
   return (
     <section className="search-bar">
-      <div className="inputs">
-        <input id="searchBusinessName" placeholder="Search Business" />
-        <input id="searchBusinessArea" placeholder="Where?" />
-      </div>
-
-      <button
-        onClick={function () {
-          alert('Hello');
-        }}
-      >
-        Let's Go
-      </button>
+      <SearchInputs />
+      <SearchButton />
     </section>
   );
 }
 
-export { BusinessList, SearchBar };
+function FilterInputs() {
+  function filterFunction(event) {
+    sessionStorage.setItem('filterChoice', event.target.id);
+  }
+  return (
+    <section className="filter-section">
+      <div className="filter">
+        <p
+          className={classNamesObject.filterOptions}
+          id="bestMatch"
+          onClick={filterFunction}
+        >
+          Best Match
+        </p>
+        <p
+          className={classNamesObject.filterOptions}
+          id="highestRated"
+          onClick={filterFunction}
+        >
+          Highest Rated
+        </p>
+        <p
+          className={classNamesObject.filterOptions}
+          id="mostReviewed"
+          onClick={filterFunction}
+        >
+          Most Reviewed
+        </p>
+      </div>
+      <hr />
+    </section>
+  );
+}
+
+export { BusinessList, SearchBar, FilterInputs };

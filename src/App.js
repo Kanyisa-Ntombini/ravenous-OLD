@@ -1,5 +1,5 @@
 import './App.css';
-import { BusinessList, SearchBar } from './components';
+import { BusinessList, SearchBar, FilterInputs } from './components';
 
 function App() {
   return (
@@ -9,6 +9,7 @@ function App() {
         <div className="food-pic"></div>
       </header>
       <main>
+        <FilterInputs />
         <SearchBar />
         <BusinessList />
       </main>
