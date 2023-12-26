@@ -28,7 +28,9 @@ I would like to thank the following creators for the images used in this project
 
 - If you would like to use this image please use following [this link](https://www.flaticon.com/free-icons/food).
 
-  ![food icon](./public/dish.png =50x50)
+  <!-- ![food icon](./public/dish.png =50x50) -->
+
+<img src="./public/dish.png" width="50" height="50" />
 
 ### Jimmy Dean for the header picture
 
