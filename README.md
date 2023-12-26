@@ -22,15 +22,20 @@ This project was created by the amazing team at [Codecademy](https://www.codecad
 
 ## Image Credits
 
-I would like to thank the following creators for the images used in this project.
+### I would like to thank the following creators for the images used in this project:
 
 ![food icon](./public/dish.png)
-If you would like to use this image please use following [this link](https://www.flaticon.com/free-icons/food)
 
-![coverpage](./images/food.jpg)
-If you would like to use this image please use following [this link](https://unsplash.com/photos/assorted-fruits-on-brown-wooden-bowls-Yn0l7uwBrpw?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash)
+- If you would like to use this image please use following [this link](https://www.flaticon.com/free-icons/food)
 
-![Image of a vegan food plate](https://unsplash.com/photos/bowl-of-vegetable-salads-IGfIGP5ONV0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
-If you would like to use this image please use following [this link](https://unsplash.com/photos/bowl-of-vegetable-salads-IGfIGP5ONV0?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash).
+![cover page picture](./images/food.jpg)
+
+- If you would like to use this image please use following [this link](https://unsplash.com/photos/assorted-fruits-on-brown-wooden-bowls-Yn0l7uwBrpw?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash)
 
 ![Image of boiled eggs on bread](./src/food-business-image1.jpg)If you would like to use this image please use following [this link](https://unsplash.com/photos/sandwich-with-boiled-egg-fdlZBWIP0aM?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash)
+
+![Image of a vegan food plate](./src/food-business-image3.jpg)
+If you would like to use this image please use following [this link](https://unsplash.com/photos/bowl-of-vegetable-salads-IGfIGP5ONV0?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash).
+
+![Tshisanyama](./src/food-business-image2.jpg)
+If you would like to use this image please use following [this link](https://unsplash.com/photos/grilled-meat-and-vegetable-on-the-table-UC0HZdUitWY).
