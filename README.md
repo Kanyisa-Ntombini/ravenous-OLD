@@ -6,7 +6,7 @@ This project was created by the amazing team at [Codecademy](https://www.codecad
 
 ## How to use
 
-- Please follow [this link](https://github.com/Kanyisa-Ntombini/ravenous) to view the project
+- Please follow [this link](https://ravenous-888.netlify.app/) to view the project
 - Alternatively, please fork the project and then clone it on your computer
 - Start the react server by running `npm start`
 
