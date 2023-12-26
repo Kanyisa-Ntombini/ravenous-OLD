@@ -1,5 +1,9 @@
 import './App.css';
-import { BusinessList, SearchBar, FilterInputs } from './components';
+import BusinessList from './BusinessList';
+import SearchBar from './SearchBar';
+import FilterInputs from './FilterInputs';
+
+sessionStorage.clear();
 
 function App() {
   return (

@@ -242,7 +242,7 @@ header h1 {
   width: 50%;
 }
 
-main ul {
+.business-list {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -253,6 +253,6 @@ main ul {
   margin: 1rem 5rem;
 }
 
-/* .business figure {
+.business figure {
   width: 15rem;
-} */
+}
