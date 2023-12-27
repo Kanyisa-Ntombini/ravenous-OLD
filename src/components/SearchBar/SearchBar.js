@@ -4,6 +4,7 @@ import styles from './SearchBar.module.css';
 function FilterInputs() {
   function filterFunction(event) {
     sessionStorage.setItem('FilterChoice', event.target.id);
+    console.log(sessionStorage);
   }
   return (
     <section className={styles.FilterSection}>
@@ -52,7 +53,7 @@ function SearchButton() {
     const term = searchBusinessTerm.value;
     const location = searchBusinessArea.value;
     const radius = 1000;
-    const sortBy = sessionStorage.getItem('filterChoice');
+    const sortBy = sessionStorage.getItem('FilterChoice');
 
     console.log(`location = ${location}`);
     console.log(`term = ${term}`);
